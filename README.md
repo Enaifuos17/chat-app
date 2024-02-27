@@ -1,10 +1,6 @@
-# ![Node/Express/ChatApp project](./frontend/dist/images/logo-1.webp)
-
-[![Build Status](https://travis-ci.org/anishkny/node-express-realworld-example-app.svg?branch=master)](https://travis-ci.org/anishkny/node-express-realworld-example-app)
+# (./frontend/dist/images/logo-1.webp)
 
 > ### Example Node (Express) codebase containing real world examples (CRUD, auth, websockets, etc)
-
-<a href="https://thinkster.io/tutorials/node-json-api" target="_blank"><img width="454" src="https://raw.githubusercontent.com/gothinkster/realworld/master/media/learn-btn-hr.png" /></a>
 
 ## Getting Started
 
