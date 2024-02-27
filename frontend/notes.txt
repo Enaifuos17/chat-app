@@ -1,0 +1,40 @@
+-> to use tailwind css, there's more than one method
+-> most famous two are: CDN && CLI
+-> we'll use CLI 
+
+1- initialize npm into ur project
+--> npm init -y
+
+2- install and initialize tailwindcss
+--> npm install -D tailwindcss
+--> npx tailwindcss init (give us the tailwind config file)
+
+3- go the the config tailwind file and set where u can search the html file
+--> content: ["./*.html"] (it depends on ur path)
+
+4- create src folder && dist folder 
+--> src => input.css
+--> dist => style.css
+
+5- add the tailwind directives to my css
+--> src/input.css => 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+6- then on the package.json we will create two script for the build & watch
+"build": "npx tailwindcss -i ./src/input.css -o ./dist/style.css",
+"watch": "npx tailwindcss -i ./src/input.css -o ./dist/style.css --watch"
+
+7- on the html.file we link our dist/style.css
+--> <link rel="stylesheet" href="./dist/style.css" />
+
+8- to run tailwind
+--> npm run watch
+
+
+// -------------------------------------------------------------------
+// -------------------------------------------------------------------
+
+--> flex-col --> justify-center (not items-center)
+

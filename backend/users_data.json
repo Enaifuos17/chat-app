@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "username": "soufiane",
+    "email": "sfn@gmail.com",
+    "password": "$2b$10$jTE3XwveGnJ66tl0xLu.4e89LZuuNrYm1/rV4SwfggVL/T0c5LR1a"
+  },
+  {
+    "id": 2,
+    "username": "mehdi",
+    "email": "mehdi!@22.com",
+    "password": "$2b$10$GwWYpGUgfAo8zrz3vMKCeuaxJhfZxn1hJdOQCxJVmKM1li96ZOpim"
+  },
+  {
+    "id": 3,
+    "username": "kamal",
+    "email": "kam@tt8.com",
+    "password": "$2b$10$ZDnOw6htvF.KuzFj9uatLu9oSoqXzhlWm1DbajEX3kW.yQPInvYsm"
+  },
+  {
+    "id": 4,
+    "username": "anass",
+    "email": "anas@889.com",
+    "password": "$2b$10$w9NexJ0BBoTBuM.1NUza1u.zjP.dgFMQaRGSQ8FSurpiIUhUpMjWK"
+  },
+  {
+    "id": 5,
+    "username": "kaka",
+    "email": "kaka@gmail.com",
+    "password": "$2b$10$5oWDW5fc1S.o6WpYD2jR1OxG2JS7hmtkL0jdCR4I/1TR1BaW0JdA."
+  }
+]

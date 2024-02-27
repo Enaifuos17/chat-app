@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>co-SMS Login</title>
+    <link rel="stylesheet" href="./dist/style.css" />
+    <!-- google font - Rubik -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- remixicons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="./dist/images/login-icon-2.png" />
+  </head>
+  <body
+    class="font-['Rubik'] bg-gradient-to-r from-color-3 from-10% via-color-5 via-30% to-color-6 to-90% flex items-center justify-center h-screen"
+  >
+    <img
+      src="./dist/images/logo-1.webp"
+      alt=""
+      class="animate-pulse w-[170px] absolute -top-10 left-1"
+    />
+    <div
+      class="max-w-[960px] bg-black-color-opacity grid grid-cols-2 gap-20 items-center p-5 rounded-2xl"
+    >
+      <!--  -->
+      <div id="img">
+        <img src="./dist/images/login-img.svg" alt="" />
+      </div>
+      <!--  -->
+      <div id="details" class="md:max-w-80 grid gap-5">
+        <h1 class="text-5xl font-bold text-white">Login</h1>
+        <p class="text-my-gray-color">Access to our creative chat app</p>
+        <form
+          id="form-id"
+          action="/login"
+          method="POST"
+          class="space-y-6 text-white"
+        >
+          <div class="relative">
+            <div
+              id="icon-username"
+              class="absolute bg-white-medium-opacity rounded-2xl p-2 flex items-center justify-center text-color-2"
+            >
+              <i class="ri-user-fill px-1"></i>
+            </div>
+            <input
+              id="username-id"
+              type="text"
+              name="username"
+              placeholder="Username"
+              required
+              class="md:w-80 bg-white-light-opacity py-2 px-12 rounded-2xl outline-none"
+            />
+          </div>
+          <div class="relative">
+            <div
+              id="icon-password"
+              class="absolute bg-white-medium-opacity rounded-2xl p-2 flex items-center justify-center text-color-2"
+            >
+              <i class="ri-lock-fill px-1"></i>
+            </div>
+            <input
+              id="password-id"
+              type="password"
+              name="password"
+              placeholder="Password"
+              required
+              class="md:w-80 bg-white-light-opacity py-2 px-12 rounded-2xl outline-none"
+            />
+          </div>
+          <button
+            type="submit"
+            class="bg-gradient-to-r from-teal-300 to-indigo-400 md:w-80 font-semibold rounded-2xl py-2 transition-all hover:bg-gradient-to-r hover:from-indigo-400 hover:to-teal-300"
+          >
+            Login
+          </button>
+        </form>
+        <div
+          class="text-my-gray-color border-t border-white-medium-opacity pt-4 space-y-4 text-[14px]"
+        >
+          <p id="first-p">
+            Don't have an account?
+            <i
+              class="ri-arrow-right-double-line animate-bounce-left-to-right text-hover-color -mr-2"
+            ></i>
+            <i
+              class="ri-arrow-right-double-line animate-bounce-left-to-right text-white -mr-2"
+            ></i>
+            <i
+              class="ri-arrow-right-double-line animate-bounce-left-to-right text-hover-color"
+            ></i>
+            <a
+              href="./signup.html"
+              class="text-my-gray-color font-bold opacity-[0.8] tracking-wider hover:text-white hover:opacity-[1]"
+              >SIGN UP</a
+            >
+          </p>
+          <p
+            id="msg-p"
+            class="text-hover-color-2 pt-4 space-y-4 text-sm hidden"
+          >
+            Username or Password are wrong!
+          </p>
+          <p
+            id="return-p"
+            class="text-hover-color-2 pt-4 space-y-4 text-sm hidden"
+          >
+            You are successfully Logged in !
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--  -->
+    <script src="./js/script_login.js"></script>
+  </body>
+</html>

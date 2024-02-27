@@ -1,0 +1,171 @@
+:root {
+  --color-1: #3e186d;
+  --color-2: #404597;
+  --color-3: #4163b4;
+  --color-4: #426cbe;
+  --color-5: #448ddd;
+  --color-6: #37a5e7;
+  --hover-color: #08fef9;
+  --hover-color-2: #26e0f7;
+  --white-color: #fff3ff;
+  --black-color-opacity: #00000050;
+  --my-gray-color: #ddd;
+  --white-light-opacity: #ffffff30;
+  --white-medium-opacity: #ffffff60;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-image: url("../dist/images/bg3.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.container nav img#logo {
+  width: 180px;
+}
+
+.container nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /*  */
+  margin-top: -50px;
+}
+
+.container nav a {
+  color: white;
+}
+
+.container nav .links {
+  display: flex;
+  gap: 30px;
+  margin-right: 30px;
+}
+
+@keyframes pulse {
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.container nav img {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.container nav .links a.sp,
+.container nav .links a.nrml {
+  color: black;
+  padding: 8px 20px;
+  border-radius: 20px;
+  /* font-size: 14px; */
+  transition: 0.2s linear;
+}
+
+.container nav .links a.nrml:hover {
+  background-color: var(--color-4);
+  color: #fff;
+}
+
+.container nav .links a.sp {
+  background-color: var(--hover-color-2);
+}
+
+.container nav .links a.sp i {
+  padding-right: 5px;
+  transition: 0.2s linear;
+}
+
+.container nav .links a.sp:hover {
+  background-color: var(--color-4);
+  color: #fff;
+}
+
+.container nav .links a.sp:hover i {
+  color: #fff;
+}
+
+/*  */
+
+.second {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+/* desc */
+
+.second .desc {
+  /* background-color: #ddd; */
+  margin-left: 24px;
+}
+
+.second .desc h1 {
+  font-size: 70px;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #000;
+  margin-bottom: 20px;
+}
+
+.second .desc p {
+  max-width: 400px;
+  margin-left: 4px;
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+.second .desc button {
+  margin-left: 4px;
+  padding: 8px 20px;
+  border-radius: 20px;
+  border: none;
+  background-color: var(--hover-color-2);
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.2s linear;
+}
+
+.second .desc button:hover {
+  background-color: var(--color-4);
+  color: #fff;
+}
+
+.second .desc button i {
+  padding-right: 5px;
+}
+
+.second .desc button i:hover {
+  color: #fff;
+}
+
+/* img */
+
+.second img {
+  width: 500px;
+  height: 400px;
+}
+
+@keyframes up-down {
+  0%,
+  100% {
+    transform: translateY(0%);
+  }
+  50% {
+    transform: translateY(15px);
+  }
+}
+
+.second img {
+  animation: up-down 1.3s ease-in-out infinite;
+}
