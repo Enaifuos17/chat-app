@@ -1,5 +1,3 @@
-# "./frontend/dist/images/logo-1.webp"
-
 > ### Example Node (Express) codebase containing real world examples (CRUD, auth, websockets, etc)
 
 ## Getting Started
