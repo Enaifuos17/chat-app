@@ -5,6 +5,8 @@ let dontHaveAccP = document.getElementById("first-p");
 let wrongP = document.getElementById("msg-p");
 let goodLogInP = document.getElementById("return-p");
 
+// let arrOfUsernames = [];
+
 const myApi = "http://localhost:3000/api";
 
 async function getData() {
@@ -38,7 +40,16 @@ async function handleSubmit(e) {
       goodLogInP.classList.remove("hidden");
       wrongP.classList.add("hidden");
       console.log("user found!");
+      // *
+      // arrOfUsernames.push(usernameInput.value);
+      // *
       //   window.location.href = "./chat.html";
+      function delay() {
+        setTimeout(function () {
+          window.location.href = "http://localhost:3000/";
+        }, 2500);
+      }
+      delay();
     } else {
       goodLogInP.classList.add("hidden");
       wrongP.classList.remove("hidden");
@@ -48,5 +59,7 @@ async function handleSubmit(e) {
     console.log("something wrong!!");
   }
 }
+
+// export { arrOfUsernames };
 
 myForm.addEventListener("submit", handleSubmit);

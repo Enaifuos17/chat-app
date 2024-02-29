@@ -3,10 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>co-SMS Signup</title>
-    <link href="./dist/style.css" rel="stylesheet" />
-    <link rel="stylesheet" href="./src/sp.css">
-    <link rel="icon" href="./dist/images/login-icon-2.png" />
+    <title>co-SMS Login</title>
+    <link rel="stylesheet" href="./dist/style.css" />
+    <link rel="stylesheet" href="./src/sp.css" />
     <!-- google font - Rubik -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -19,6 +18,7 @@
       href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
       rel="stylesheet"
     />
+    <link rel="icon" href="./dist/images/login-icon-2.png" />
   </head>
   <body
     class="font-['Rubik'] bg-gradient-to-r from-color-3 from-10% via-color-5 via-30% to-color-6 to-90% flex items-center justify-center h-screen"
@@ -28,48 +28,26 @@
       alt=""
       class="animate-pulse w-[170px] absolute -top-10 left-1"
     />
+    <!--  -->
     <div
-      class="max-w-[960px] bg-black-color-opacity grid grid-cols-2 gap-20 items-center p-5 rounded-2xl"
+      class="w-[550px] bg-black-color-opacity flex justify-center p-5 rounded-2xl"
     >
-      <div id="img">
-        <img src="./dist/images/login-img.svg" alt="" />
-      </div>
       <!--  -->
       <div id="details" class="md:max-w-80 grid gap-5">
-        <h1 class="text-5xl font-bold text-white">Sign Up</h1>
-        <p class="text-my-gray-color">
-          Create account and start chatting with friends !
-        </p>
-        <!-- form -->
+        <h1 class="text-5xl font-bold text-white">Update</h1>
+        <p class="text-my-gray-color">Update your password using your email</p>
         <form
           id="form-id"
-          action="/signup"
+          action="/update"
           method="POST"
           class="space-y-6 text-white"
         >
-          <!-- username -->
           <div class="relative">
             <div
               id="icon-username"
               class="absolute bg-white-medium-opacity rounded-2xl p-2 flex items-center justify-center text-color-2"
             >
               <i class="ri-user-fill px-1"></i>
-            </div>
-            <input
-              id="username-id"
-              type="text"
-              name="username"
-              placeholder="Username"
-              required
-              class="md:w-80 bg-white-light-opacity py-2 px-12 rounded-2xl outline-none"
-            />
-          </div>
-          <!-- email -->
-          <div class="relative">
-            <div
-              class="absolute bg-white-medium-opacity rounded-2xl p-2 flex items-center justify-center text-color-2"
-            >
-              <i class="ri-mail-fill px-1"></i>
             </div>
             <input
               id="email-id"
@@ -80,7 +58,6 @@
               class="md:w-80 bg-white-light-opacity py-2 px-12 rounded-2xl outline-none"
             />
           </div>
-          <!-- password -->
           <div class="relative">
             <div
               id="icon-password"
@@ -92,7 +69,7 @@
               id="password-id"
               type="password"
               name="password"
-              placeholder="Password"
+              placeholder="New Password"
               required
               class="md:w-80 bg-white-light-opacity py-2 px-12 rounded-2xl outline-none"
             />
@@ -102,14 +79,14 @@
             type="submit"
             class="md:w-80 font-semibold rounded-2xl py-2"
           >
-            Sign Up
+            Update
           </button>
-        </form id="form-id" action="/signup" method="POST">
+        </form>
         <div
           class="text-my-gray-color border-t border-white-medium-opacity pt-4 space-y-4 text-[14px]"
         >
-          <p id="first-p">
-            Already have an account?
+          <!-- <p id="first-p">
+            Don't have an account?
             <i
               class="ri-arrow-right-double-line animate-bounce-left-to-right text-hover-color -mr-2"
             ></i>
@@ -120,43 +97,28 @@
               class="ri-arrow-right-double-line animate-bounce-left-to-right text-hover-color"
             ></i>
             <a
-              href="./login.html"
+              href="./signup.html"
               class="text-my-gray-color font-bold opacity-[0.8] tracking-wider hover:text-white hover:opacity-[1]"
-              >LOGIN</a
+              >SIGN UP</a
             >
-          </p>
-          <p id="msg-p" class="hidden">
-            You are already signed up!
-            <i
-              class="ri-arrow-right-double-line animate-bounce-left-to-right text-hover-color -mr-2"
-            ></i>
-            <i
-              class="ri-arrow-right-double-line animate-bounce-left-to-right text-white -mr-2"
-            ></i>
-            <i
-              class="ri-arrow-right-double-line animate-bounce-left-to-right text-hover-color"
-            ></i>
-            <a
-              href="./login.html"
-              class="text-my-gray-color font-bold opacity-[0.8] tracking-wider hover:text-white hover:opacity-[1]"
-              >LOGIN</a
-            >
-          </p>
-        </div>
-        <p
-          id="return-p"
-          class="text-hover-color-2 pt-4 space-y-4 text-sm hidden"
-        >
-          Account successfully created ! / Now you have an account !
-          <a
-            href="./login.html"
-            class="text-my-gray-color font-bold opacity-[0.8] tracking-wider hover:text-white hover:opacity-[1]"
-            >LOGIN</a
+          </p> -->
+          <!-- <p
+            id="msg-p"
+            class="text-hover-color-2 pt-4 space-y-4 text-sm hidden"
           >
-        </p>
+            Username or Password are wrong!
+          </p> -->
+          <!-- <p
+            id="msg-p"
+            class="text-hover-color-2 pt-4 space-y-4 text-sm hidden"
+          >
+            The email is incorrect!
+          </p> -->
+          <p id="good-p" class="text-hover-color-2 pt-4 space-y-4 text-sm"></p>
+        </div>
       </div>
     </div>
     <!--  -->
-    <script src="./js/script_signup.js"></script>
+    <script src="./js/script_update.js"></script>
   </body>
 </html>

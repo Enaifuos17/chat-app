@@ -59,9 +59,9 @@ body {
   }
 }
 
-.container nav img {
+/* .container nav img {
   animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
-}
+} */
 
 .container nav .links a.sp,
 .container nav .links a.nrml {
@@ -78,7 +78,8 @@ body {
 }
 
 .container nav .links a.sp {
-  background-color: var(--hover-color-2);
+  background-color: var(--color-6);
+  color: #fff;
 }
 
 .container nav .links a.sp i {
@@ -168,4 +169,66 @@ body {
 
 .second img {
   animation: up-down 1.3s ease-in-out infinite;
+}
+
+/* hover on button */
+
+.second .desc button {
+  position: relative;
+  overflow: hidden;
+  height: 2.5rem;
+  padding: 0 2rem;
+  border-radius: 1.5rem;
+  background: var(--color-6);
+  background-size: 400%;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+nav .links a:not(.nrml) {
+  position: relative;
+  overflow: hidden;
+  height: 2.2rem;
+  padding: 0 1.5rem;
+  background: #37a5e7;
+  background-size: 400%;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.second .desc button:hover::before,
+nav .links a:hover::before {
+  transform: scaleX(1);
+}
+
+.second .desc button .button-content,
+nav .links a span {
+  position: relative;
+  z-index: 1;
+}
+
+.second .desc button::before,
+nav .links a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+  width: 100%;
+  height: inherit;
+  border-radius: inherit;
+  /* background: linear-gradient(
+    82.3deg,
+    rgba(150, 93, 233, 1) 10.8%,
+    rgba(99, 88, 238, 1) 94.3%
+  ); */
+  background: linear-gradient(
+    82.3deg,
+    rgba(245, 245, 245, 0.537) 0.8%,
+    #224390 94.3%
+  );
+  transition: all 0.475s;
 }

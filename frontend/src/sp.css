@@ -1,0 +1,71 @@
+:root {
+  --color-1: #3e186d;
+  --color-2: #404597;
+  --color-3: #4163b4;
+  --color-4: #426cbe;
+  --color-5: #448ddd;
+  --color-6: #37a5e7;
+  --hover-color: #08fef9;
+  --hover-color-2: #26e0f7;
+  --white-color: #fff3ff;
+  --black-color-opacity: #00000050;
+  --my-gray-color: #ddd;
+  --white-light-opacity: #ffffff30;
+  --white-medium-opacity: #ffffff60;
+}
+
+#submit-id {
+  --color: #fff;
+  --color2: rgb(10, 25, 30);
+  padding: 0.3em 0.2em;
+  background-color: transparent;
+  border-radius: 14px;
+  border: 0.3px solid #ddd;
+  transition: 0.5s;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  z-index: 1;
+  font-weight: 500;
+  font-size: 17px;
+  text-transform: uppercase;
+  color: var(--color);
+}
+
+#submit-id::after,
+#submit-id::before {
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  transform: skew(90deg) translate(-50%, -50%);
+  position: absolute;
+  inset: 50%;
+  left: 25%;
+  z-index: -1;
+  transition: 0.7s ease-in;
+  background-color: var(--color-5);
+}
+
+#submit-id::before {
+  top: -50%;
+  left: -25%;
+  transform: skew(90deg) rotate(180deg) translate(-50%, -50%);
+}
+
+#submit-id:hover::before {
+  transform: skew(45deg) rotate(180deg) translate(-50%, -50%);
+}
+
+#submit-id:hover::after {
+  transform: skew(45deg) translate(-50%, -50%);
+}
+
+#submit-id:hover {
+  color: #fff;
+}
+
+#submit-id:active {
+  filter: brightness(0.7);
+  transform: scale(0.98);
+}

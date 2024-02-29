@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>co-SMS Login</title>
     <link rel="stylesheet" href="./dist/style.css" />
+    <link rel="stylesheet" href="./src/sp.css" />
     <!-- google font - Rubik -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -77,8 +78,9 @@
             />
           </div>
           <button
+            id="submit-id"
             type="submit"
-            class="bg-gradient-to-r from-teal-300 to-indigo-400 md:w-80 font-semibold rounded-2xl py-2 transition-all hover:bg-gradient-to-r hover:from-indigo-400 hover:to-teal-300"
+            class="md:w-80 font-semibold rounded-2xl py-2"
           >
             Login
           </button>
@@ -111,9 +113,14 @@
           </p>
           <p
             id="return-p"
-            class="text-hover-color-2 pt-4 space-y-4 text-sm hidden"
+            class="text-hover-color-2 pt-4 space-y-4 text-sm relative hidden"
           >
             You are successfully Logged in !
+            <img
+              src="./dist/images/soon-without-bg.gif"
+              alt=""
+              class="w-[60px] absolute right-12 -top-1"
+            />
           </p>
         </div>
       </div>
