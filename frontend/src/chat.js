@@ -37,7 +37,7 @@ socket.on("chat-message", (data) => {
 function addMessageToUI(isOwnMessage, data) {
   // clearFeedback()
   const element = `  <li class="${
-    isOwnMessage ? "conversation-item me" : "conversation-item"
+    isOwnMessage ? "conversation-item" : "conversation-item me"
   }">
     <div class="conversation-item-side">
         <img class="conversation-item-image" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8cGVvcGxlfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60" alt="">
@@ -104,3 +104,9 @@ function clearFeedback() {
     element.parentNode.removeChild(element);
   });
 }
+
+// *
+
+// import { arrOfUsernames } from "../js/script_login";
+
+// console.log(arrOfUsernames);

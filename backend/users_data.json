@@ -10,5 +10,17 @@
     "username": "safae",
     "email": "safae2001@gmail.com",
     "password": "$2b$10$cegdL9P4BXmqLzIv4OmZY.0Afzrk2sfO5VnL276VhsjOiYLecKGQG"
+  },
+  {
+    "id": 3,
+    "username": "messi",
+    "email": "messi2010@gmail.com",
+    "password": "$2b$10$ausYr7Zi6RQn8fQPF.Tr8ecCL5Hq7wmitiQNPZU1WoByCvWJiKeUC"
+  },
+  {
+    "id": 4,
+    "username": "kante",
+    "email": "kante22@gmail.com",
+    "password": "$2b$10$25/1BEDFNUAfAg70Ad9vjeV6AIl2.H9EA/7Zl2Or0mop3MSlLHoK6"
   }
 ]
