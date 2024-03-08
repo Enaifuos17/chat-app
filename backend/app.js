@@ -7,8 +7,12 @@ const cors = require("cors");
 const socket = require("socket.io");
 var path = require("path");
 
+// dotenv config
+const dotenv = require("dotenv");
+dotenv.config();
+
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT;
 
 // to deal with the json type
 app.use(express.json());
