@@ -29,7 +29,15 @@ JSON (for storing data)
 ### Team Members
 
 ```javascript
-const teamMembers = ["Alice", "Bob", "Charlie", "David", "Emma"];
+// ["Full Name", "Username"]
+const teamMembers = [
+  ["Soufiane El Faquir", "Enaifuos17"],
+  ["Chaimae Laaguidi", "Chaimaela"],
+  ["Salma Ibnou-abs", "Salma-ibnou"],
+  ["Ouijdane Znaki", "ouijdaneznaki"],
+  ["Mehdi Qazzih", "themehdiq"],
+  ["Safae Hamri", "safae_hamri"],
+];
 ```
 
 ### Setup Instructions
