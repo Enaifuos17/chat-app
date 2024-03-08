@@ -1,10 +1,10 @@
-# Project Readme
+# Readme File
 
 ## Chat App
 
 ### Overview
 
-This project is a chat application developed by our team, aiming to provide users with a seamless chatting experience. The application features a home page with sign-up and login functionalities, leading users to respective forms to register or login. Upon successful authentication, users are redirected to the chat app interface where they can exchange messages in real-time.
+This project is a chat application developed by our team, aiming to provide users with a seamless chatting experience. The application features a home page with sign-up and login functionalities, leading users to respective forms to register or login. Upon successful authentication, users are redirected to the chat app interface where they can exchange messages in real-time, the chat app interface contain some features like, update password, dark&light mode, logout
 
 ### Technologies Used
 
@@ -23,6 +23,8 @@ Backend:
 Modules:
 
 - Bcrypt (for password hashing)
+- dotenv
+- socket.io (for chat)
 
 JSON (for storing data)
 
