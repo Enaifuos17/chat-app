@@ -28,15 +28,9 @@ JSON (for storing data)
 
 ### Team Members
 
-javascript
-Copy code
-const teamMembers = [
-"Soufiane El Faquir",
-"Chaimae Laaguidi",
-"Salma Ibnou-abs",
-"Ouijdane Znaki",
-"Mehdi Qazzih"
-];
+```javascript
+const teamMembers = ["Alice", "Bob", "Charlie", "David", "Emma"];
+```
 
 ### Setup Instructions
 
